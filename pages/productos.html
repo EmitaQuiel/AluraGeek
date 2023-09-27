@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Cards&Games Productos</title>
+  </head>
+  <body>
+    <!-- INICIO DE HEADER -->
+    <div class="overlay">
+    <header>
+      <div class="contenedor-opciones">
+        <nav >
+          <img src="../assets/img/Logo_footer-transformed.png" class="logo" />
+          <div class="carrito">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACrUlEQVR4nO2ZO4xMURjHf1YyjalorAqVkXg0VuFViA2xGla2oGIlXhGroluFR8Go6GzhHatCRWM7q/Co2MSuhFgVjV2yEhn55H/lkp2559wZe7+IX3KSyZzv/93/yb333O+cA/+pSwnoAW4Cr4AJNft9Q30W45qdwBhQy2ijwA4cMhuopow+BQ4DFWCOWkX/PUvFnZPWDVUZ+wrsAWY1iG0DehWbDMbN41QDvgBrInRrU4PZTsGUUu+E3YlY9kn7uugJoCf1TtgjE4tpniuH3dnCuCUTh5rIcUQ5rlMgIzKxpIkcS5XDvjOF8Vkmyk3kKCuH5SqM5HvgJc+/P5DJgHJjptpk3kHMc2C+9kebm2cgKwNmk5l6tEbUvyJP8m0SP2jCQChZeR6qvytP8oMSD9Tp35gyYL/zEpJnQP3mKZqzEvfX6R9NGbBaKS8heU6q/0yeC1yT2Eru6XiXMvA2zwUi8vSq3zxFMyRxZ53+LTJhF9+c5wIReTrlxTxF86YFdVSrqMiLLRmiy+upFtRRraIsL99ilwsLJPyIHz7JU3uMaLVEtujxwgt56sizDr+LH+7JU3eM6JhEF/HDJXnqixFdkOg4fjghT7b1FMwdiXbhh93yNBgjeiLROvywXp6GY0QfJFqIHxbJ03iowDbKvqt52jUvxfparJG/xx/j8mZ3J5MNCn6MP4blzd6X4NnhNv4YjJlNk/n6PP6oxnzfki/oUfzRF1Nx3Fewx6Oxbnmzuiu4ylyFPzpiqvKk7p+PP9pD10nJSmwq58HN36YtdOWarI1ti8YrYyF7CcluxSP8MiSPmxoF7VXQFfxyNeTwtV9Bp/DL6Ywd0N/2WPfjlwPyeJmAXe+t+KUr4JTg51mIBS3DL8vl8WWjoAkHp1K1wGZep8XjUVtW+3UU9wNY5IVjWCP9OAAAAABJRU5ErkJggg=="
+            />
+            <span class="cantidad-carrito">0</span>
+          </div>
+          <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+
+          <nav class="nav" id="nav">
+            <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
+            <ul id="menu">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="#cardsets">Cards Sets</a></li>
+              <li><a href="#boosters">Boosters</a></li>
+              <li><a href="#elitebox">Elite Box</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </nav>
+
+        </nav>
+      </div>
+      <div class="lista"></div>
+    </header>
+    <!-- FINAL DE HEADER -->
+    
+    <main>
+      <!-- INICIO DE PRESENTACION -->
+      <div class="presentacion-productos">
+        <img src="../assets/img/backgrounds/presentacion-productos.png" alt="" />
+        <h1>Nuestros Productos</h1>
+        <p>
+          ¡Descubre el emocionante mundo de los TCG Pokemon con nuestros
+          productos exclusivos!
+        </p>
+      </div>
+      <!-- FINAL DE PRESENTACION -->
+
+      <!-- CONTENEDORES PRODUCTOS -->
+      <div class="contenedor-productos-cardsets">
+        <div id="cardsets">
+          <h1 class="titulo-principal">
+            <img src="../assets/img/Bulbasaur-icono.png" alt="" />Cards Sets
+          </h1>
+          <ul class="productos-cardsets"></ul>
+        </div>
+      </div>
+
+      <div class="contenedor-productos-boosters">
+        <div id="boosters">
+          <h1 class="titulo-principal">
+            <img src="../assets/img/squirtle-icono.png" alt="" />Boosters
+          </h1>
+          <ul class="productos-boosters"></ul>
+        </div>
+      </div>
+
+      <div class="contenedor-productos-elitebox">
+        <div id="elitebox">
+          <h1 class="titulo-principal">
+            <img src="../assets/img/charmander-icono.png" alt="" />Elite Box
+          </h1>
+          <ul class="productos-elitebox"></ul>
+        </div>
+      </div> 
+      
+      <button class="boton-detalles">
+        <a href="../pages/detalle_producto.html"></a>
+    </button>
+    
+      <!-- FINAL DE CONTENEDOR PRODUCTOS -->
+      <section>
+        <div class="pago">
+          <h1>Mi carrito</h1>
+          <div class="vaciar-carrito">
+            <button id="vaciar-carrito-btn">
+              <svg class="delete-svgIcon" viewBox="0 0 448 512">
+                <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path>
+              </svg>
+            </button>
+          </div>
+          
+          <ul class="lista-pago"></ul>
+          
+          <div class="pagar">
+            <div class="precio-pagar">
+              <p>Total a pagar: &nbsp;</p><p class="total-pagar">0</p>
+            </div>
+            
+            <div class="finalizar-compra">
+              <p>Finalizar compra</p>
+            </div>
+          </div>
+          
+          <div class="cerrar-tienda">
+            <img src="../assets/img/salir.png">
+          </div>
+        </div>
+
+        
+      </section>
+      <!-- VENTANA EMERGENTE -->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <h2>¡Compra realizada!</h2>
+          <img src="../assets/img/contenedor-factura.png" alt="">
+          <button id="regresarCompraBtn">
+          
+  <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
+  
+  <div class="text">Regresar</div>
+          </button>
+
+              <div class="contenedor-productos-confirmacion">
+                <ul class="li-procesar">
+                  <div class="nombre-producto"></div>
+                  <div class="precio-producto"></div>
+                  <div class="cantidad-producto"></div>
+                </ul>
+              </div>
+      </div>
+      <!-- FINAL VENTANA EMERGENTE -->
+    </main>
+
+    <!-- COMIENZO FOOTER -->
+    <footer id="contacto">
+      <div class="contenedor-footer">
+        <img src="../assets/img/pikachu-footer.png" class="pikachu-footer" />
+        <div class="box-footer">
+          <div class="logo-footer">
+            <img src="../assets/img/Logo_footer-transformed.png" alt="" />
+          </div>
+          <div class="terms">
+            <p>
+              Bienvenido a Cards&Games, donde la magia de Pokémon cobra vida.
+              Sumérgete en un universo de aventura y estrategia mientras
+              exploras nuestra amplia gama de cartas coleccionables y productos
+              relacionados con Pokémon. Ya seas un coleccionista apasionado o un
+              jugador competitivo, en Cards&Games encontrarás todo lo que
+              necesitas para vivir la emoción de ser un auténtico entrenador
+              Pokémon. ¡Descubre las cartas más raras, los sets más emocionantes
+              y únete a una comunidad de amantes de Pokémon en Cards&Games!
+            </p>
+          </div>
+        </div>
+        <div class="box-footer">
+          <h2>Conocenos</h2>
+          <a href="#">Quienes Somos</a>
+          <a href="#">Entremos en contacto</a>
+          <a href="#">Mapa del sitio</a>
+          <a href="#">Nuestra Tienda</a>
+        </div>
+
+        <div class="box-footer">
+          <h2>Condiciones</h2>
+          <a href="#">Envios y Cambios</a>
+          <a href="#">Política de Privacidad</a>
+          <a href="#">Términos y Condiciones</a>
+        </div>
+
+        <div class="box-footer">
+          <h2>Redes Sociales</h2>
+          <a href="#"
+            ><i class="fab fa-brands fa-twitter" style="color: #7d7d7d"></i
+            >Twitter</a
+          >
+          <a href="#"
+            ><i class="fab fa-brands fa-instagram" style="color: #7d7d7d"></i
+            >Instagram</a
+          >
+          <a href="#"
+            ><i class="fab fa-brands fa-linkedin" style="color: #7d7d7d"></i
+            >Linkedin</a
+          >
+          <a href="#"
+            ><i class="fab fa-brands fa-facebook" style="color: #7d7d7d"></i
+            >Facebook</a
+          >
+        </div>
+      </div>
+      <div class="box-copyrigth">
+        <hr />
+        <p>Todos los derechos reservados &copy;</p>
+        <b>Emily Castillo Quiel</b>
+      </div>
+    </footer>
+  </div>
+    <!-- FINAL FOOTER -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
